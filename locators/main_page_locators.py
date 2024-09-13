@@ -60,8 +60,6 @@ class MainPageLocators:
                                      '@class="counter_counter__num__3nue1"][1]')
 
     # Окно подтверждения создания заказа
-    # confirmation_modal_of_order = (By.XPATH, '//section[contains(@class, "Modal_modal_opened")]/div[contains'
-    #                                          '(@class, "Modal_modal__container")]')
     confirmation_modal_of_order = (By.XPATH, '//p[text()="идентификатор заказа"]')
 
     # Номер созданного заказа в окне подтверждения
@@ -69,7 +67,3 @@ class MainPageLocators:
 
     # Кнопка с крестиком, закрывающая окно подтвержденного заказа
     button_close_confirmation = (By.XPATH, "//button[@class = 'Modal_modal__close_modified__3V5XS Modal_modal__close__TnseK']")
-
-        # (By.XPATH, '//section[contains(@class, "Modal_modal_opened")'
-        #                                    ']//button[contains(@class, "close")]')
-

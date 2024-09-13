@@ -46,4 +46,5 @@ class TestMainPage:
         main_page.wait_order_button_displayed()
         main_page.drag_and_drop_ingredient_to_order()
         main_page.click_on_button_make_order()
-        assert main_page.check_displaying_of_confirmation_modal_of_order()
+        order_number = main_page.get_number_of_order_in_modal_confirmation()
+        assert order_number != '9999'
